@@ -1,0 +1,14 @@
+<center>
+    <h1> Department {{dep}}</h1>
+</center>
+
+<h2>
+    <ul>
+        {% for item in dep.lot_set.all %}
+            <li> 
+                {{ item.name }}: cost = {{ item.price }}$, date open - {{item.date_open}}, date close - {{item.date_close}} <br>
+                {{item.description}}
+            </li>
+        {% endfor %}
+    </ul>
+</h2>

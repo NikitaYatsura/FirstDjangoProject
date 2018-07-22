@@ -1,0 +1,3 @@
+__pycashe__/
+*.pyc
+db.sqlite3

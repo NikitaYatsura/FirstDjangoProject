@@ -1,0 +1,8 @@
+<center>
+    <h1> Catologs </h1>
+</center>
+{% for item in departments %}
+    <h2> <a href="/{{item.id}}/"> {{item.name}} </a> </h2>
+    <h3> {{item.description}} </h3>
+    <br> 
+{% endfor %}
