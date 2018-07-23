@@ -20,6 +20,6 @@ from auction.views import main, catolog, items
 urlpatterns = [
     path('', main),
     path('catologs/', catolog),
-    path('<int:dep>/', items),
+    path('<int:dep>/', items, name='lots'),
     path('admin/', admin.site.urls),
 ]
