@@ -19,7 +19,7 @@ from auction.views import main, catolog, items
 
 urlpatterns = [
     path('', main),
-    path('catologs/', catolog),
+    path('catologs/', catolog, name='section'),
     path('<int:dep>/', items, name='lots'),
     path('admin/', admin.site.urls),
 ]
